@@ -1,0 +1,9 @@
+BASIC GOAL:
+	send tab url/nick over to websocket server
+
+popup.js->send roomid and nick to background.js
+background.js->onmsg {roomid,nick}->connect ws->ontab change send urls
+
+server:
+	/ws/{roomid}
+	../server.go

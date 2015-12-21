@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+
+    "name": "Wikiwars client",
+    "description": "Extension for wikiwars",
+    "version": "1.0",
+    // "content_scripts": [{
+    //     "matches": ["*://*/*"],
+    //     "js": ["content.js"]
+    // }],
+    "browser_action": {
+        "default_icon": "wikiwars.png",
+        "default_popup": "popup.html"
+    },
+    // "app": {
+        "background": {
+          "persistent": false,
+            "scripts": ["background.js"]
+        },
+    // },
+    "permissions": [
+        "tabs", 
+        "*://*/*"
+     ]
+
+}
